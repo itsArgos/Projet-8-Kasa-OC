@@ -1,4 +1,5 @@
 .banner {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,6 +15,17 @@
         color: white;
         font-weight: 500;
         font-style: normal;
-        font-size: 3em;
+        font-size: 48px;
+        z-index: 1;
     }
+}
+
+.banner::before {
+    position: absolute;
+    content: "";
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+    background: #000;
+    opacity: 0.3;
 }

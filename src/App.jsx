@@ -1,16 +1,18 @@
-import React from 'react'
-import './App.css'
-import Navbar from './components/Navbar';
-import Banner from './components/Banner';
-import ApartmentGrid from './components/ApartementGrid.jsx'
+import '@/App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
 
 
-function App() {
+export function App() {
   return <div>
-    <Navbar />
-    <Banner />
-    <ApartmentGrid />
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home />}/>
+      <Route path='/about' element={<About />}/>
+    {/* path='*' fonctionne si jamais l'url ne correspond à rien de déclaré au dessus */}
+      <Route path='*' element={<Home />}/>
+    </Routes>
+    </BrowserRouter>
   </div>;  
 }
-
-export default App

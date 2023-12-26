@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    color: #ff6060;
+    font-weight: 700;
+    padding-top: 45px;
+    gap: 2rem;
+    text-decoration: none;
+    
+    .navbar_logo {
+        margin-right: auto;
+    }
+
+    .home {
+        color: #ff6060;
+    }
+
+    .about {
+        color: #ff6060;
+        text-decoration: none;
+    }
+}
