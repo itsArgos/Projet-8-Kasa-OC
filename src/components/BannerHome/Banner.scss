@@ -1,4 +1,4 @@
-.banner {
+.banner_home {
     position: relative;
     display: flex;
     align-items: center;
@@ -7,9 +7,8 @@
     width: 100%;
     margin-top: 45px;
     border-radius: 25px;
-    background-image: url("/public/banner.png");
-    background-position: center;
-    background-size: cover;
+    background: url(/src/assets/img/bannerhome.png) center/cover;
+
 
     h1 {
         color: white;
@@ -20,7 +19,7 @@
     }
 }
 
-.banner::before {
+.banner_home::before {
     position: absolute;
     content: "";
     height: 223px;

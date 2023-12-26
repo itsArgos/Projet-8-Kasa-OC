@@ -1,18 +1,17 @@
 import React from 'react';
-import { Navbar } from '../components/Navbar';
+import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { MainWidth } from "@/components/MainWidth"
+import { Banner } from '@/components/BannerAbout';
 
-const About = () => {
+export const About = () => {
     return (
         <div>
             <MainWidth>
-                <Navbar />
-                <Navbar />
+            <Navbar />
+            <Banner />
             </MainWidth>
-                <Footer />
+            <Footer />
         </div>
-    );
-};
-
-export default About;
+        );
+    };

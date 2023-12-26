@@ -1,21 +1,19 @@
 import React from 'react';
 import { Navbar } from '../components/Navbar';
-import { Banner } from '@/components/Banner';
-import { ApartementCard } from '@/components/ApartementCard';
+import { Banner } from '@/components/BannerHome';
+import { Card } from '@/components/Cards';
 import { Footer } from '@/components/Footer';
 import { MainWidth } from "@/components/MainWidth"
 
-const Home = () => {
+export const Home = () => {
     return (
         <div>
             <MainWidth >
             <Navbar />
             <Banner />
-            <ApartementCard />
-            </MainWidth>/
+            <Card />
+            </MainWidth >
             <Footer />
         </div>
         );
     };
-    
-    export default Home;
