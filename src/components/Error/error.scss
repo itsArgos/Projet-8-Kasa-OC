@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    .error-404 {
+        color: #FF6060;
+        font-size: 288px;
+        font-weight: 700;
+        margin: 139px 0 139px 0;
+    }
+    
+    .error-text {
+        color: #FF6060;
+        font-size: 36px;
+        font-weight: 500;
+    }
+    
+    .link-home {
+        text-decoration: underline;
+        color: #FF6060;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 139px 0 139px 0;
+    }
+    
+}
