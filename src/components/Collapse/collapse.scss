@@ -1,0 +1,32 @@
+.collapse {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background: #F6F6F6;
+    margin: 30px auto;  
+    border-radius: 5px;
+    
+    
+    button {
+        display: flex;
+        justify-content: space-between;
+        background: #FF6060;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        padding: 10px 20px 10px 15px;
+        font-size: 24px;
+        text-align: start;
+        
+        i {
+            cursor: pointer;
+            font-size: 32px;
+        }
+        
+    }
+
+    .collapse-content {
+        color: #FF6060;
+        margin: 15px 20px;
+    }
+}

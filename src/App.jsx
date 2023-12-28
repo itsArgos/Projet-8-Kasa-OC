@@ -1,9 +1,9 @@
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "./pages/Home";
-import { About } from "./pages/About";
-import { Error } from "./pages/Error";
-import { Apartment } from "./pages/Apartment";
+import { Home } from "./pages/Home/Home";
+import { About } from "./pages/About/About";
+import { Error } from "./pages/Error/Error";
+import { Apartment } from "./pages/Apartment/Apartment";
 
 export function App() {
   return (
