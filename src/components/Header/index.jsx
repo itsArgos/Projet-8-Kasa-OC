@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export function Navbar() {
   return (
     <nav className="navbar">
-      <img className="navbar_logo" src="logo_kasa_nav.svg" alt="Logo" />
+      <img className="navbar_logo" src="/logo_kasa_nav.svg" alt="Logo" />
       <NavLink
         className={({ isActive }) => (isActive ? "active" : undefined)}
         to="/"

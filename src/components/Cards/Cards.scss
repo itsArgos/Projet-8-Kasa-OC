@@ -1,17 +1,19 @@
+@import '../../style/colors.scss';
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 60px;  
     padding: 56px 50px;
     margin: 50px 0;
-    background: #F6F6F6;
+    background: $tertiary-color;
     width: 100%;
     border-radius: 25px;
     
     article {
         display: flex;
         align-items: end;
-        color: white;
+        color: $primary-color;
         width: 100%;
         aspect-ratio: 1/1;
         border-radius: 10px;

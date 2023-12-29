@@ -1,32 +1,34 @@
+@import '../../style/colors.scss';
+
 .collapse {
-    display: flex;
-    flex-direction: column;
     width: 80%;
-    background: #F6F6F6;
-    margin: 30px auto;  
-    border-radius: 5px;
-    
-    
-    button {
+    margin: 30px auto;
+
+    .collapse_content {
         display: flex;
+        flex-direction: row;
+        align-items: center;
         justify-content: space-between;
-        background: #FF6060;
-        color: white;
+        background-color: $secondary-color;
         border-radius: 5px;
-        border: none;
         padding: 10px 20px 10px 15px;
-        font-size: 24px;
-        text-align: start;
-        
-        i {
-            cursor: pointer;
-            font-size: 32px;
+
+        h2, i {
+            color: $primary-color;
+            margin: 0;
+            font-size: 24px;
         }
-        
+
+         .collapse_icon {
+            cursor: pointer;
+        }
     }
 
-    .collapse-content {
-        color: #FF6060;
-        margin: 15px 20px;
+    .collapse_text {
+        background: $tertiary-color;
+
+        .text_content {
+            padding: 15px 20px;
+        }
     }
 }

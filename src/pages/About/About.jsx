@@ -1,8 +1,9 @@
 import { Footer } from "@/components/Footer";
 import { MainWidth } from "@/components/MainWidth/MainWidth";
 import { Banner } from "@/components/BannerAbout";
-import { Collapse } from "../../components/Collapse";
-import { Navbar } from "../../components/Header";
+import { Collapse } from "@/components/Collapse";
+import { Navbar } from "@/components/Header";
+import aboutData from "@/assets/data/about.json";
 
 export const About = () => {
   return (
@@ -10,10 +11,15 @@ export const About = () => {
       <MainWidth>
         <Navbar />
         <Banner />
-        <Collapse />
-        <Collapse />
-        <Collapse />
-        <Collapse />
+        <div>
+          {aboutData.map((content) => {
+            return (
+              <div key={content.id}>
+                <Collapse title={content.title} text={content.text} />
+              </div>
+            );
+          })}
+        </div>
       </MainWidth>
       <Footer />
     </div>
