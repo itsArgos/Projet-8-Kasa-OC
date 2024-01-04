@@ -4,7 +4,7 @@ import { Banner } from "@/components/BannerHome";
 import { Cards } from "@/components/Cards";
 import { Footer } from "@/components/Footer";
 import { MainWidth } from "@/components/MainWidth/MainWidth";
-import { Navbar } from "../../components/Header";
+import { Navbar } from "../../components/Navbar";
 
 export const Home = () => {
   return (

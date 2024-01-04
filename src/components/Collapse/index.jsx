@@ -1,5 +1,5 @@
 import "./collapse.scss";
-import React, { useState } from "react";
+import { useState } from "react";
 
 export function Collapse({ title, text }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,16 +10,14 @@ export function Collapse({ title, text }) {
   }
 
   return (
-    <div className="collapse">
-      <div onClick={open} className="collapse_content">
+    <details className="collapse">
+      <summary onClick={open} className="collapse_content">
         <h2>{title}</h2>
         <div className="collapse_icon">
-          <i className={"fa-solid fa-chevron-" + (isOpen ? "up" : "down")}></i>
+          <i className={"fa-solid fa-chevron-down"}></i>
         </div>
-      </div>
-      <div className="collapse_text">
-        {isOpen && <div className="text_content">{text}</div>}
-      </div>
-    </div>
+      </summary>
+      <div className="collapse_text">{text}</div>
+    </details>
   );
 }

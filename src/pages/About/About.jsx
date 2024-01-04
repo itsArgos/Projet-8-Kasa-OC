@@ -1,8 +1,8 @@
-import { Footer } from "@/components/Footer";
-import { MainWidth } from "@/components/MainWidth/MainWidth";
+import { Footer } from "@/components/footer";
+import { MainWidth } from "@/components/MainWidth/mainWidth";
 import { Banner } from "@/components/BannerAbout";
 import { Collapse } from "@/components/Collapse";
-import { Navbar } from "@/components/Header";
+import { Navbar } from "@/components/Navbar";
 import aboutData from "@/assets/data/about.json";
 
 export const About = () => {

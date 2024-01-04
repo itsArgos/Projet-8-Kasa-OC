@@ -1,0 +1,23 @@
+@import '@/style/colors.scss';
+
+.apartment_container {
+    color: $secondary-color;
+
+    .title_host_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .tag_rating_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+       .apartment_collapse {
+        display: flex;
+        flex-direction: row;
+        gap: 76px;
+        margin-top: -20px;
+    }
+}

@@ -1,10 +1,5 @@
-import './Banner.scss'
-
+import "./banner.scss";
 
 export const Banner = () => {
-    return (
-        <div className='banner_about'>
-            
-        </div>
-    );
+  return <div className="banner_about"></div>;
 };

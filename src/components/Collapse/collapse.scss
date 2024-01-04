@@ -19,6 +19,10 @@
             font-size: 24px;
         }
 
+        i {
+            transition: 0.25s ease;
+        }
+
          .collapse_icon {
             cursor: pointer;
         }
@@ -26,9 +30,29 @@
 
     .collapse_text {
         background: $tertiary-color;
+        padding: 15px 20px;
+        color: $secondary-color;
+        height: 0;
+        overflow: hidden;
 
-        .text_content {
-            padding: 15px 20px;
+    }
+
+    &[open] {
+        i {
+            transform: rotate(180deg);
+        }
+        .collapse_text {
+            height: auto;
         }
     }
 }
+
+details[open] + .content {
+    max-height: 500px;
+  }
+
+  .content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s;
+  }
