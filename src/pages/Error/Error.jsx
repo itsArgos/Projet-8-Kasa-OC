@@ -7,8 +7,8 @@ import { Navbar } from "@/components/Navbar";
 export const Error = () => {
   return (
     <div>
+      <Navbar />
       <MainWidth>
-        <Navbar />
         <Error404 />
       </MainWidth>
       <Footer />

@@ -2,22 +2,56 @@
 
 .apartment_container {
     color: $secondary-color;
-
-    .title_host_content {
+    
+    .apartment_content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
     }
     
-    .tag_rating_content {
+    .title_p_tag_content {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-    } 
-       .apartment_collapse {
+        flex-direction: column;
+    }
+    
+    .host_rating_content {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 20px;
+    }
+    
+    .apartment_collapse {
+        display: flex;
         gap: 76px;
-        margin-top: -20px;
+    }
+}
+
+// ************* Version Mobile ************ 
+@media screen and (max-width: 700px) { 
+    .apartment_container {
+        .apartment_content {
+            display: flex;
+            flex-direction: column;
+            
+            .host_rating_content {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                align-items: center;
+                margin-bottom: 13px;
+                gap: 0;
+                margin: 0;
+            }
+        }
+        
+        .apartment_collapse {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            details {
+                width: 100%;
+            }
+        }
     }
 }

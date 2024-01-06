@@ -10,8 +10,8 @@
     margin-top: 45px;
     border-radius: 25px;
     background: url('/src/assets/img/bannerhome.png') center/cover;
-
-
+    
+    
     h1 {
         color: $primary-color;
         font-weight: 500;
@@ -29,4 +29,49 @@
     border-radius: 25px;
     background: $quaternary-color;
     opacity: 0.3;
+}
+
+
+
+
+// ****************** Version Tablet ***************
+@media screen and (max-width: 930px) {
+    
+    .banner_home {
+        display: flex;
+        justify-content: center;
+        height: 170px;
+        
+        h1 {
+            font-size: 24px;
+            padding-left: 16px;
+        }
+    }
+    
+    .banner_home::before {
+        height: 170px;
+    }
+}
+
+
+
+// ************** Version Mobile *************
+@media screen and (max-width: 450px) {
+    
+    .banner_home {
+        display: flex;
+        justify-content: start;
+        height: 111px;
+        margin-top: 27px;
+        
+        h1 {
+            font-size: 24px;
+            width: 233px;
+            padding-left: 16px;
+        }
+    }
+    
+    .banner_home::before {
+        height: 111px;
+    }
 }

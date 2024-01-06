@@ -15,7 +15,7 @@ export function Navbar() {
         to="/about"
         className={({ isActive }) => (isActive ? "active" : undefined)}
       >
-        A propos
+        À propos
       </NavLink>
     </nav>
   );

@@ -1,19 +1,17 @@
+@import '@/style/colors.scss';
+
 .host_content {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
 
     p {
         display: flex;
-        justify-content: end;
         text-align: end;
-        flex-direction: column;
-        width: 100px;
+        width: 93px;
     }
     
-    .circle {
-        border: 1px solid #C4C4C4;
+    .circle img{
+        border: 1px solid $primary-color;
         width: 64px;
         height: 64px;
         border-radius: 50px;

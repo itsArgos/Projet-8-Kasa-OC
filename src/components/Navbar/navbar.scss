@@ -4,15 +4,18 @@
     display: flex;
     align-items: center;
     color: $secondary-color;
-    font-weight: 700;
-    padding-top: 45px;
+    font-weight: 500;
     gap: 2rem;
     text-decoration: none;
+    max-width: 1440px;
+    margin: 45px auto;
+    padding: 0 50px;
+    
     
     .navbar_logo {
         margin-right: auto;
     }
-
+    
     a{
         text-decoration: none;
         color: $secondary-color;
@@ -24,5 +27,29 @@
     a.visited {
         color: $secondary-color;
         text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 463px) {
+    .navbar img {
+        width: 40%;
+    }
+
+    .navbar {
+        gap: 2em;
+    }
+
+    a {
+        font-size: 12px;
+    }
+    
+}
+
+
+/* ************* Version Mobile *************  */
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        padding: 0 20px;
     }
 }

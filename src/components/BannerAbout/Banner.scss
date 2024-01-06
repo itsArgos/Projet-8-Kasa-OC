@@ -5,3 +5,21 @@
     border-radius: 25px;
     background: url('/src/assets/img/bannerabout.png') center/cover;
 }
+
+
+
+// *********** Version Tablet **********
+@media screen and (max-width: 930px) {
+    .banner_about {
+        height: 170px;
+    }
+}
+
+
+// ********** Version Mobile **********
+@media screen and (max-width: 450px) {
+    .banner_about {
+        height: 111px;
+        margin-bottom: 19px;
+    }
+}

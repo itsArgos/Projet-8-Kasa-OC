@@ -14,7 +14,7 @@ export function Collapse({ title, text }) {
       <summary onClick={open} className="collapse_content">
         <h2>{title}</h2>
         <div className="collapse_icon">
-          <i className={"fa-solid fa-chevron-down"}></i>
+          <i className={"fa-solid fa-chevron-up"}></i>
         </div>
       </summary>
       <div className="collapse_text">{text}</div>

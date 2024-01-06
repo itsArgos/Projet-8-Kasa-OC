@@ -13,7 +13,6 @@
     article {
         display: flex;
         align-items: end;
-        color: $primary-color;
         width: 100%;
         aspect-ratio: 1/1;
         border-radius: 10px;
@@ -22,6 +21,7 @@
         background-size: cover;
         
         h2 {            
+            color: $primary-color;
             font-size: 18px;
             font-weight: 500;
             margin: 0;
@@ -32,3 +32,31 @@
         text-decoration: none;
     }
 }
+
+// ************* Version Tablet *************
+
+@media screen and (max-width: 930px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: none;
+        padding: 0;
+        gap: 20px;
+
+        article {
+            height: 255px;
+        }
+ }
+}
+
+
+// ************* Version Mobile *************
+
+@media screen and (max-width: 590px) { 
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        background: none;
+        padding: 0;
+        margin-top: 22px;
+ }};

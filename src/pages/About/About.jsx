@@ -1,3 +1,4 @@
+import "./about.scss";
 import { Footer } from "@/components/footer";
 import { MainWidth } from "@/components/MainWidth/mainWidth";
 import { Banner } from "@/components/BannerAbout";
@@ -7,14 +8,14 @@ import aboutData from "@/assets/data/about.json";
 
 export const About = () => {
   return (
-    <div>
+    <div className="about_container">
+      <Navbar />
       <MainWidth>
-        <Navbar />
         <Banner />
         <div>
           {aboutData.map((content) => {
             return (
-              <div key={content.id}>
+              <div className="about_content" key={content.id}>
                 <Collapse title={content.title} text={content.text} />
               </div>
             );

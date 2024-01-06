@@ -1,5 +1,14 @@
 .main_width {
     max-width: 1440px;
-    margin: auto;
-    padding: 0 100px;
+    margin: 47px auto;
+    padding: 0 50px;
+}
+
+/* ************* Version Mobile *************  */
+@media screen and (max-width: 700px) {
+
+    .main_width {
+        margin: 19px auto;
+        padding: 0 20px;
+    }
 }

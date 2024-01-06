@@ -7,7 +7,8 @@
     justify-content: center;
     align-items: center;
     margin: 38px 0;
-
+    border-radius: 25px;
+    
     .btn_left {
         position: absolute;
         left: 10px;
@@ -15,7 +16,7 @@
         border: none;
         color: $primary_color;
     }
-
+    
     .btn_right {
         position: absolute;
         right: 10px;
@@ -23,15 +24,56 @@
         border: none;
         color: $primary_color;
     }
-
+    
     i {
         cursor: pointer;
         font-size: 5em;
     }
-
+    
     img {
         height: 415px;
         width: 100%;
         object-fit: cover;
+        border-radius: 25px;
+        
+    }
+}
+
+
+// ************* Version Tablet *************
+@media screen and (max-width: 800px) { 
+    .carousel_container {  
+        
+        .btn_left {
+            font-size: 10px;
+        }
+        
+        .btn_right {
+            font-size: 10px;
+        }
+        
+        img {
+            height: 300px;            
+        }
+    }
+}
+
+
+// ************* Version Mobile *************
+@media screen and (max-width: 540px) { 
+    .carousel_container {  
+        margin: 27px 0 15px 0;
+        
+        .btn_left {
+            font-size: 5px;
+        }
+        
+        .btn_right {
+            font-size: 5px;
+        }
+        
+        img {
+            height: 255px;            
+        }
     }
 }

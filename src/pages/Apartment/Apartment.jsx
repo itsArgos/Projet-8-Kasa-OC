@@ -18,24 +18,18 @@ export const Apartment = () => {
 
   return (
     <div className="apartment_container">
+      <Navbar />
       <MainWidth>
-        <Navbar />
         <Carrousel pictures={apartment.pictures} />
-        <div className="title_host_content">
-          <div>
+        <div className="apartment_content">
+          <div className="title_p_tag_content">
             <Title title={apartment.title} />
-          </div>
-          <div>
-            <Host />
-          </div>
-        </div>
-        <Paragraph location={apartment.location} />
-        <div className="tag_rating_content">
-          <div>
+            <Paragraph location={apartment.location} />
             <Tag tags={apartment.tags} />
           </div>
-          <div>
-            <Rating />
+          <div className="host_rating_content">
+            <Host name={apartment.host.name} picture={apartment.host.picture} />
+            <Rating rating={apartment.rating} />
           </div>
         </div>
         <div key={apartment.id} className="apartment_collapse">
