@@ -2,8 +2,8 @@
 
 .tags {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    flex-wrap: wrap;
+    column-gap: 10px;
     margin-top: -12px;
     margin-bottom: 8px;
 
@@ -28,6 +28,7 @@
 
         p {
             padding: 3px 20px;
+            font-size: 10px;
         }
     }
 }
@@ -35,7 +36,6 @@
 // ************* Version Mobile ************ 
 @media screen and (max-width: 460px) { 
     .tags {
-        // display: none;
 
         p {
             padding: 3px 10px;

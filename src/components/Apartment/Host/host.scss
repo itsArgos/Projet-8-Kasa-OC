@@ -18,3 +18,25 @@
         background: #C4C4C4;
     }
 }
+
+// *********** Version Mobile *********** 
+@media screen and (max-width: 450px) {
+    .host_content {
+        gap: 10px;
+        .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    .circle img{
+        width: 32px;
+        height: 32px;
+    }
+
+    p {
+        font-size: 12px;
+        width: 50px;
+    }
+}
+}

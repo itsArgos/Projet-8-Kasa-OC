@@ -10,6 +10,7 @@
     max-width: 1440px;
     margin: 45px auto;
     padding: 0 50px;
+    min-height: 81px;
     
     
     .navbar_logo {
@@ -30,26 +31,32 @@
     }
 }
 
-@media screen and (max-width: 463px) {
+/* ************* Version Tablet *************  */
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        margin: 20px 0 -40px 0;
+        padding: 0 20px;
+
+
+        a {
+            text-transform: uppercase;
+        }
+    }
+}
+
+/* ************* Version Mobile *************  */
+@media screen and (max-width: 490px) {
     .navbar img {
         width: 40%;
     }
 
     .navbar {
-        gap: 2em;
+        gap: 26px;
+        margin: 10px 0 -40px 0;
     }
 
     a {
         font-size: 12px;
-    }
-    
-}
-
-
-/* ************* Version Mobile *************  */
-@media screen and (max-width: 700px) {
-
-    .navbar {
-        padding: 0 20px;
     }
 }

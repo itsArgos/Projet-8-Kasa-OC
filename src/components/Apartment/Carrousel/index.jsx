@@ -26,11 +26,14 @@ export const Carrousel = ({ pictures }) => {
 
   return (
     <div className="carousel_container">
-      <button className="btn_left" onClick={nextImage}>
+      <button className="btn_left" onClick={prevImage}>
         <i className="fa-solid fa-chevron-left"></i>
       </button>
       <img src={pictures[pictureIndex]} alt="" />
-      <button className="btn_right" onClick={prevImage}>
+      <p className="counter_image">
+        {pictureIndex + 1}/{pictures.length}
+      </p>
+      <button className="btn_right" onClick={nextImage}>
         <i className="fa-solid fa-chevron-right"></i>
       </button>
     </div>

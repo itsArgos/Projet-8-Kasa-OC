@@ -24,7 +24,7 @@
 .banner_home::before {
     position: absolute;
     content: "";
-    height: 223px;
+    height: 100%;
     width: 100%;
     border-radius: 25px;
     background: $quaternary-color;
@@ -63,6 +63,7 @@
         justify-content: start;
         height: 111px;
         margin-top: 27px;
+        border-radius: 10px;
         
         h1 {
             font-size: 24px;
@@ -73,5 +74,6 @@
     
     .banner_home::before {
         height: 111px;
+        border-radius: 10px;
     }
 }

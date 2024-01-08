@@ -20,7 +20,14 @@ export function Cards() {
   // Ici on déclare une fonction qui récupère le tableau, boucle dessus et renvoie X fois une Card
   function getCard() {
     return data.map((card) => {
-      return <Card title={card.title} cover={card.cover} id={card.id} />;
+      return (
+        <Card
+          key={card.id}
+          title={card.title}
+          cover={card.cover}
+          id={card.id}
+        />
+      );
     });
   }
 

@@ -1,83 +1,92 @@
 @import '../../style/colors.scss';
 
-.collapse {
+.collapse_container {
     width: 80%;
-    margin: auto;
-
-    .collapse_content {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        background-color: $secondary-color;
-        border-radius: 5px;
-        padding: 10px 20px 10px 15px;
-
-        h2, i {
-            color: $primary-color;
-            margin: 0;
-            font-size: 24px;
+    margin: 0 auto;
+    
+    .collapse {
+        
+        
+        .collapse_content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $secondary-color;
+            border-radius: 5px;
+            padding: 10px 20px 10px 15px;
             
+            h2, i {
+                color: $primary-color;
+                margin: 0;
+                font-size: 24px;
+                
+            }
+            
+            h2 {
+                font-weight: 500;
+            }
+            
+            i {
+                transition: 0.25s ease;
+            }
+            
+            .collapse_icon {
+                cursor: pointer;
+            }
         }
-
-        h2 {
-            font-weight: 500;
+        
+        
+        + .collapse_text {
+            background: $tertiary-color;
+            color: $secondary-color;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.7s;
+            padding: 0 20px;
+            margin: 0;
+            list-style: none;
         }
-
-        i {
-            transition: 0.25s ease;
-        }
-
-         .collapse_icon {
-            cursor: pointer;
-        }
-    }
-
-    .collapse_text {
-        background: $tertiary-color;
-        padding: 15px 20px;
-        color: $secondary-color;
-        height: 0;
-        overflow: hidden;
-
-    }
-
-    &[open] {
-        i {
-            transform: rotate(-180deg);
-        }
-        .collapse_text {
-            height: auto;
+        
+        &[open] {
+            
+            i {
+                transform: rotate(-180deg);
+            }
+            
+            + .collapse_text {
+                height: auto;
+                max-height: 500px;
+                padding: 15px 20px;
+            }
+            
         }
     }
 }
 
-details[open] + .content {
-    max-height: 500px;
-  }
 
-  .content {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.5s;
-  }
-
-  
 // ************ Version Mobile ************ 
-  @media screen and (max-width: 450px) {
-
-      .collapse {
-          width: 100%;
-          margin: 0;
-          
-          .collapse_content {
-            h2 {
-                font-size: 13px;
+@media screen and (max-width: 450px) {
+    .collapse_container {
+        width: 100%;
+        
+        .collapse {
+            margin: 0;
+            
+            .collapse_content {
+                padding: 5px 10px;
+                
+                h2 {
+                    font-size: 13px;
+                }
+                
+                i {
+                    font-size: 20px;
+                }
             }
-
-            i {
-                font-size: 20px;
+        }            
+            .collapse_text {
+                font-size: 12px;
             }
-          }
-        }
     }
+}

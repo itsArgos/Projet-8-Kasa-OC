@@ -3,3 +3,10 @@
     justify-content: end;
     gap: 7px;
 }
+
+// *********** Version Mobile *********** 
+@media screen and (max-width: 450px) {
+    .rating_apartment {
+        font-size: 0.8em;
+    }
+}

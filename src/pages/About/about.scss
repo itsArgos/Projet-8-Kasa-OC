@@ -3,3 +3,12 @@
         margin-bottom: 20px;
     }
 }
+
+// ********* Version Mobile ************ 
+@media screen and (max-width: 450px) {
+    .about_container {
+        .main_width {
+            min-height: calc(100vh - 24px - 236px);
+        }
+    }
+}

@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 38px 0;
+    margin: 30px 0;
     border-radius: 25px;
     
     .btn_left {
@@ -37,6 +37,13 @@
         border-radius: 25px;
         
     }
+
+    .counter_image {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        color: $primary_color;
+    }
 }
 
 
@@ -62,7 +69,9 @@
 // ************* Version Mobile *************
 @media screen and (max-width: 540px) { 
     .carousel_container {  
+        position: relative;
         margin: 27px 0 15px 0;
+        border-radius: 10px;
         
         .btn_left {
             font-size: 5px;
@@ -73,7 +82,12 @@
         }
         
         img {
-            height: 255px;            
+            height: 255px;    
+            border-radius: 10px;        
+        }
+
+        .counter_image {
+            display: none;
         }
     }
 }
