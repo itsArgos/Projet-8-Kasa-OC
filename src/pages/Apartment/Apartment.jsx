@@ -1,5 +1,5 @@
 import "./apartment.scss";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { Footer } from "@/components/Footer";
 import { MainWidth } from "@/components/MainWidth/MainWidth";
 import { Navbar } from "@/components/Navbar";
@@ -15,6 +15,11 @@ import ApartmentData from "@/assets/data/apartments.json";
 export const Apartment = () => {
   const { apartmentId } = useParams();
   const apartment = ApartmentData.find((card) => card.id === apartmentId);
+
+  // Cette condition permet de renvoyer sur la page d'erreur si l'id d'apartment est null
+  if (apartment == null) {
+    return <Navigate to="/Error" />;
+  }
 
   return (
     <div className="apartment_container">
